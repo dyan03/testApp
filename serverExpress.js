@@ -25,7 +25,7 @@ var cb0 = function (req, res, next) {
 
 var cb1 = function (req, res, next) {
     console.log('CB1');
-    // next();
+    next();
 }
 
 app.get('/example/a', [cb0, cb1], function (req, res, next) {
