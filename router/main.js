@@ -11,6 +11,16 @@ module.exports=function(app){
         res.render()
     })
     
+    app.get("/stock",function(req, res){
+
+        res.render("m_stock")
+    })
+
+    app.get("/w1-1.html",function(req, res){
+
+        res.render("w1-1")
+    })
+
     var cb0 = function (req, res, next) {
         console.log('CB0');
         next();
